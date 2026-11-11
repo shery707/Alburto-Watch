@@ -1,0 +1,7 @@
+ID,Scenario,Input,Expected Result
+T01,Open website,index.html,Homepage loads
+T02,Filter products,Luxury,Only Luxury watches appear
+T03,Reset product filter,All watches,All six watches appear
+T04,Open product details,Select Regent Automatic,Correct details modal opens
+T05,Submit contact form,Valid name email and message,Demo confirmation appears
+T06,Geolocation,Click location ticker,Permission prompt appears

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Alberto Watches — a curated collection of luxury, vintage and smart timepieces.">
+  <title>Alberto Watches | Timeless by Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="announcement">Complimentary shipping on orders over $500</div>
+  <nav class="navbar navbar-expand-lg navbar-dark main-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home"><span class="brand-mark"><i class="bi bi-watch"></i></span><span>ALBERTO<small>Watch company</small></span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#collections">Collections</a></li>
+          <li class="nav-item"><a class="nav-link" href="#technology">Technology</a></li>
+          <li class="nav-item"><a class="nav-link" href="#stores">Store Locator</a></li>
+          <li class="nav-item"><a class="nav-link" href="#support">Support</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        </ul>
+        <div class="nav-actions"><span class="visitor-pill"><i class="bi bi-eye"></i> <b id="visitorCount">1</b> <span id="visitLabel">visit</span></span><a href="#collections" class="nav-cta">Explore</a></div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero-section">
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">The art of timekeeping</p>
+        <h1>Timeless by<br><em>design</em></h1>
+        <p class="hero-copy">Luxury, vintage, smart and classic watches, with repair and appraisal in our Karachi showroom</p>
+        <div class="d-flex flex-wrap gap-3"><a class="btn btn-gold" href="#collections">Explore collection</a><a class="btn btn-outline-light" href="#about">Our story</a></div>
+      </div>
+    </section>
+
+    <section class="intro-strip">
+      <div class="container intro-grid">
+        <div><span class="eyebrow dark">A legacy of precision</span><h2>More than a watch<br><em>A lasting impression</em></h2></div>
+        <p>From timeless classics to modern innovation, every Alberto timepiece is selected for its craftsmanship, character and exceptional attention to detail.</p>
+        <a href="#about" class="text-link">Discover Alberto <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <section id="collections" class="section-pad collections-section">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow dark">Find your signature</span><h2>Explore the <em>collections</em></h2></div>
+          <p>Four collections, from everyday luxury to smart watches</p>
+        </div>
+        <div class="filter-bar" role="group" aria-label="Filter watches">
+          <button class="filter-btn active" data-filter="all">All watches</button>
+          <button class="filter-btn" data-filter="luxury">Luxury</button>
+          <button class="filter-btn" data-filter="vintage">Vintage</button>
+          <button class="filter-btn" data-filter="smart">Smart</button>
+          <button class="filter-btn" data-filter="classic">Classic</button>
+        </div>
+        <div class="row g-4" id="productGrid"></div>
+        <div class="text-center mt-5"><a href="#price-list" class="text-link">View complete price list <i class="bi bi-arrow-right"></i></a></div>
+      </div>
+    </section>
+
+    <section id="technology" class="technology-section">
+      <div class="tech-image"></div>
+      <div class="tech-content"><span class="eyebrow">Engineered to perform</span><h2>Innovation in<br><em>every second</em></h2><p>Precision movements, considered materials and thoughtful engineering come together to create watches built for real life and made to last.</p>
+        <div class="tech-points"><div><i class="bi bi-gear-wide-connected"></i><span><b>Precision movement</b><small>Reliable timekeeping, every day.</small></span></div><div><i class="bi bi-droplet"></i><span><b>Water resistance</b><small>Confidence for life's adventures.</small></span></div><div><i class="bi bi-battery-charging"></i><span><b>Smart innovation</b><small>Useful technology, beautifully integrated.</small></span></div></div>
+        <a href="#support" class="btn btn-gold mt-4">Learn about our watches</a>
+      </div>
+    </section>
+
+    <section id="price-list" class="section-pad price-section">
+      <div class="container">
+        <div class="section-heading"><div><span class="eyebrow dark">Transparent by design</span><h2>Collection <em>price list</em></h2></div><p>Selected pieces and their indicative retail prices</p></div>
+        <div class="table-responsive price-table-wrap"><table class="table price-table mb-0"><thead><tr><th>Timepiece</th><th>Collection</th><th>Reference</th><th class="text-end">Price</th></tr></thead><tbody id="priceTable"></tbody></table></div>
+        <p class="small-note">Prices are illustrative and shown in USD. Contact our team for current availability and final pricing</p>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery-section section-pad">
+      <div class="container"><div class="section-heading"><div><span class="eyebrow dark">Details that matter</span><h2>A closer <em>look</em></h2></div><p>Forms, finishes and details from the collection</p></div>
+        <div class="gallery-grid">
+          <button class="gallery-tile tile-one" data-image="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=1400&q=85" aria-label="View watch detail"><span>Timeless form</span></button>
+          <button class="gallery-tile tile-two" data-image="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1400&q=85" aria-label="View watch detail"><span>Refined detail</span></button>
+          <button class="gallery-tile tile-three" data-image="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=1400&q=85" aria-label="View watch detail"><span>Modern classic</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="stores" class="store-section">
+      <div class="container store-inner"><div><span class="eyebrow">Personal service, always</span><h2>Come experience<br><em>Alberto</em></h2><p>Visit our showroom for personal guidance, watch appraisals, repairs and a closer look at our collections.</p><a href="#contact" class="btn btn-gold">Find your store</a></div><div class="store-card"><i class="bi bi-geo-alt"></i><span class="eyebrow dark">Our showroom</span><h3>Alberto Watch Company</h3><p>123 Luxury Avenue<br>Karachi, Pakistan</p><a href="https://maps.google.com/?q=Karachi" target="_blank" rel="noopener" class="text-link">Open map <i class="bi bi-arrow-right"></i></a></div></div>
+    </section>
+
+    <section id="about" class="section-pad about-section"><div class="container about-grid"><div><span class="eyebrow dark">The Alberto story</span><h2>Time, thoughtfully<br><em>considered</em></h2></div><div><p class="about-lead">Alberto Watch Company is a full-service watch repair, appraisal and retail destination for people who appreciate fine timepieces.</p><p>Our collection brings together enduring design, trusted craftsmanship and modern innovation. Whether you are choosing your first watch, adding to a collection or caring for a treasured heirloom, our team is here to help.</p><a href="#contact" class="text-link">Get to know us <i class="bi bi-arrow-right"></i></a></div></div></section>
+
+    <section id="team" class="team-section section-pad"><div class="container"><div class="section-heading"><div><span class="eyebrow dark">The people behind the project</span><h2>Meet the <em>team</em></h2></div><p>Designed and developed as an Aptech student eProject</p></div><div class="row g-3 team-grid"><div class="col-6 col-lg-3"><div class="team-card"><span>01</span><h3>Arham Gohar</h3><small>Project team</small></div></div><div class="col-6 col-lg-3"><div class="team-card"><span>02</span><h3>Sheryar</h3><small>Project team</small></div></div><div class="col-6 col-lg-3"><div class="team-card"><span>03</span><h3>Huzaifa Rehman</h3><small>Project team</small></div></div></div></div></section>
+
+    <section id="support" class="support-section section-pad"><div class="container"><div class="section-heading"><div><span class="eyebrow dark">Here when you need us</span><h2>Care beyond the <em>purchase</em></h2></div><p>Repairs, appraisals and advice from our watch specialists</p></div><div class="row g-3"><div class="col-md-4"><div class="support-card"><i class="bi bi-tools"></i><h3>Watch repairs</h3><p>Professional care and attention for the timepieces you value.</p></div></div><div class="col-md-4"><div class="support-card"><i class="bi bi-award"></i><h3>Appraisals</h3><p>Guidance and appraisal support from our watch specialists.</p></div></div><div class="col-md-4"><div class="support-card"><i class="bi bi-chat-square-text"></i><h3>Personal assistance</h3><p>Questions about a product? Our team is ready to help.</p></div></div></div></div></section>
+
+    <section id="contact" class="contact-section section-pad"><div class="container contact-grid"><div><span class="eyebrow">Let's talk time</span><h2>We'd love to<br><em>hear from you</em></h2><p>Reach out for product information, repairs, appraisals or general enquiries.</p><div class="contact-details"><p><i class="bi bi-envelope"></i> hello@albertowatches.example</p><p><i class="bi bi-telephone"></i> +92 300 123 4567</p><p><i class="bi bi-geo-alt"></i> 123 Luxury Avenue, Karachi, Pakistan</p></div></div><form id="contactForm" class="contact-form"><label for="name">Your name</label><input id="name" class="form-control" required placeholder="Full name"><label for="email">Email address</label><input id="email" type="email" class="form-control" required placeholder="you@example.com"><label for="message">How can we help?</label><textarea id="message" class="form-control" rows="4" required placeholder="Message"></textarea><button class="btn btn-gold w-100" type="submit">Send enquiry</button><p id="formMessage" class="form-message" aria-live="polite"></p></form></div></section>
+  </main>
+
+  <footer class="footer"><div class="container"><div class="footer-top"><a class="navbar-brand" href="#home"><span class="brand-mark"><i class="bi bi-watch"></i></span><span>ALBERTO<small>Watch company</small></span></a><p>Every second tells a story</p><div class="footer-links"><a href="#collections">Collections</a><a href="#technology">Technology</a><a href="#gallery">Gallery</a><a href="#about">About us</a><a href="#team">Our team</a><a href="#contact">Contact us</a><a href="#sitemap">Site map</a></div></div><div id="sitemap" class="footer-bottom"><span>© <span id="year"></span> Alberto Watch Company. Student project demonstration</span><span>Est. 1988 · Karachi, Pakistan</span></div></div></footer>
+
+  <div class="ticker"><div class="ticker-track"><span><i class="bi bi-clock"></i> <b id="liveDate">—</b></span><span><i class="bi bi-geo-alt"></i> <b id="locationText">Share location</b></span><span>Alberto Watch Company · Timeless by design</span><span><i class="bi bi-clock"></i> <b id="liveTime">--:--:--</b></span><span>Precision, craft, character</span></div></div>
+
+  <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content product-modal"><button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Close"></button><div class="modal-body" id="productModalBody"></div></div></div></div>
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-xl"><div class="modal-content bg-dark"><button type="button" class="btn-close btn-close-white ms-auto m-3" data-bs-dismiss="modal" aria-label="Close"></button><img id="galleryModalImage" class="img-fluid" alt="Alberto watch gallery image"></div></div></div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./products.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
